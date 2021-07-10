@@ -17,14 +17,12 @@
 
 .top {
     border: 2px red solid;
-    padding: 10px;
     justify-content: center;
     width: 60%;
 }
 
 .bot {
     border: 2px hotpink solid;
-    padding: 10px;
     display: flex;
     justify-content: center;
     width: 60%;
