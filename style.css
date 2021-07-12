@@ -1,6 +1,6 @@
 
 * {
-    width: auto; 
+    width: auto;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -24,10 +24,22 @@
     height: 160px;
 }
 
+.top h1 {
+    color: #0F357C;
+}
+.top h3 {
+    color: #093C8C;
+}
+.top p {
+    color: #13448B;
+}
+
 .bot {
     color: white;
     display: flex;
     width: auto;
+    justify-content: center;
+    width: 100%;
 }
 
 .left-bot {
@@ -35,8 +47,9 @@
     padding: 10px;
     width: 50%;
 }
+
+
 .right-bot {
-    background-color:#13448B;
     padding: 10px;
     width: 50%;
 }
@@ -45,8 +58,6 @@
 .price{
     display: flex;
     align-items: center;
-
-
 }
 .value{
     padding-right:8px;
