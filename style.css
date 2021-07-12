@@ -1,40 +1,125 @@
+
 * {
     width: auto;
-    
+    font-family: 'Barlow', sans-serif;
+}
+.text {
+    margin:  10px 5px;
+}
+body {
+    margin: 0px;
 }
 
 .container {
-    border: 10px black solid;
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     align-items: center;
-    
-    
+    background-color: rgba(24, 4, 138, 0.345);
 }
 
+.card {
+    margin: 10px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3125em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
 .top {
-    border: 2px red solid;
+    width: 100%;
     justify-content: center;
-    width: 60%;
+    padding: 10px;
+    background-color: white;
+}
+
+.title {
+    color: #0F357C;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.sub-title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.top .sub-title {
+    color: #093C8C;
+}
+
+.content {
+    color: #13448B;
+    text-align: justify;
 }
 
 .bot {
-    border: 2px hotpink solid;
+    color: white;
     display: flex;
-    justify-content: center;
-    width: 60%;
+    width: 100%;
+}
+.left-bot, .right-bot {
+    display: flex;
+    flex-direction: column;
 }
 
 .left-bot {
-    border: 2px blue solid;
-    padding: 10px;
+    background-color:#0F357C;
     width: 50%;
+    padding: 10px;
+    align-items: center;
 }
+
 .right-bot {
-    border: 2px gray solid;
-    padding: 10px;
+    background-color: #13448B;
     width: 50%;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;
+}
+
+.b-invite {
+    background-color: white;
+    color: #0F357C;
+    padding: 6px 18px;
+    border-radius: 0.90em;
+    text-align-last: center;
+    justify-self: end;
+    margin-top: 30%;
+}
+.b-invite:hover {
+    background-color: #fcfcfcad;
+}
+.b-invite:visited{
+    color: #0F357C;
+}
+
+.b-invite a {
+    text-decoration: none;
+
+}
+@media (max-width: 700px){
+    .card {
+        width: 80%;
+    }
+    .top {
+        font-size: 0.8em;
+    }
+    .bot {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-bot {
+        font-size: 0.8rem;
+        width: auto;
+    }
+    .b-invite {
+        margin-top: auto;
+    }
+    .right-bot {
+        font-size: 0.8rem;
+        width: auto;
+        text-align: justify;
+    }
 }
