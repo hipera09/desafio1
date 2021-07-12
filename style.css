@@ -35,20 +35,17 @@
 }
 
 .bot {
-    border: 2px hotpink solid;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .left-bot {
-    border: 2px blue solid;
     padding: 10px;
     width: 50%;
     
 }
 .right-bot {
-    border: 2px gray solid;
     padding: 10px;
     width: 50%;
 }
