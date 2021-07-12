@@ -3,6 +3,9 @@
     width: auto;
     font-family: 'Barlow', sans-serif;
 }
+.text {
+    margin:  10px 5px;
+}
 body {
     margin: 0px;
 }
@@ -22,7 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 0.3125em;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 .top {
@@ -34,9 +37,11 @@ body {
 .title {
     color: #0F357C;
     font-size: 1.8em;
+    font-weight: bold;
 }
 .sub-title {
     font-size: 1.4em;
+    font-weight: bold;
 }
 .top .sub-title {
     color: #093C8C;
@@ -52,20 +57,23 @@ body {
     display: flex;
     width: 100%;
 }
-
-.left-bot {
-    background-color:#0F357C; 
-    padding: 10px;
-    width: 50%;
+.left-bot, .right-bot {
     display: flex;
     flex-direction: column;
+}
 
+.left-bot {
+    background-color:#0F357C;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
 }
 
 .right-bot {
     background-color: #13448B;
-    padding: 10px;
     width: 50%;
+    padding: 10px;
+    align-items: center;
     text-align: justify;
 }
 
@@ -73,12 +81,13 @@ body {
     background-color: white;
     color: #0F357C;
     padding: 6px 18px;
-    border-radius: 0.3125em;
+    border-radius: 0.90em;
     text-align-last: center;
-    align-self: center;
+    justify-self: end;
+    margin-top: 30%;
 }
 .b-invite:hover {
-    background-color: rgba(213, 211, 224, 0.212);
+    background-color: #fcfcfcad;
 }
 .b-invite:visited{
     color: #0F357C;
@@ -86,6 +95,7 @@ body {
 
 .b-invite a {
     text-decoration: none;
+
 }
 @media (max-width: 700px){
     .card {
@@ -102,6 +112,9 @@ body {
     .left-bot {
         font-size: 0.8rem;
         width: auto;
+    }
+    .b-invite {
+        margin-top: auto;
     }
     .right-bot {
         font-size: 0.8rem;
