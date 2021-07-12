@@ -1,37 +1,51 @@
 * {
     width: auto;
-    
+    font-family: 'Barlow', sans-serif;
 }
 
 .container {
-    border: 10px black solid;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
     display:flex;
     flex-direction: column;
-    margin: auto;
-    width: 50%;
     align-items: center;
-    
-    
+    border-radius: 0.3125em;
+    box-shadow: 0px 0px 5px black;
+    font-family: sans-serif;
 }
 
 .top {
-    border: 2px red solid;
-    justify-content: center;
-    width: 60%;
+    
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.top h1 {
+    color: #0F357C;
+}
+.top h3 {
+    color: #093C8C;
+}
+.top p {
+    color: #13448B;
 }
 
 .bot {
     border: 2px hotpink solid;
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 .left-bot {
     border: 2px blue solid;
     padding: 10px;
     width: 50%;
+    
 }
 .right-bot {
     border: 2px gray solid;
